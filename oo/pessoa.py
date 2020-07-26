@@ -22,7 +22,7 @@ if __name__ == '__main__':
     del luciano.filhos
     luciano.olhos = 1 #caso alguma variavel seja diferente da que foi
                       #definidada a todos como igual, pode ser atribuida
-                      #um valor diferente
+                      #um valor diferente do original
     print(luciano.__dict__)
     print(renzo.__dict__)
     print(Pessoa.olhos)
