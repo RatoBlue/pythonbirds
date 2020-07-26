@@ -1,5 +1,5 @@
 class Pessoa:
-    olhos = 2
+    olhos = 2 #define atributo que seja  igual pra todos
     def __init__(self, *filhos, nome=None, idade=35):
         self.nome = nome
         self.idade = idade
@@ -20,7 +20,9 @@ if __name__ == '__main__':
         print(filho.nome)
     luciano.sobrenome = 'Ramalho'
     del luciano.filhos
-    luciano.olhos = 1
+    luciano.olhos = 1 #caso alguma variavel seja diferente da que foi
+                      #definidada a todos como igual, pode ser atribuida
+                      #um valor diferente
     print(luciano.__dict__)
     print(renzo.__dict__)
     print(Pessoa.olhos)
